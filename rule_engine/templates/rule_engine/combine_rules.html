@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combine Rules</title>
+</head>
+<body>
+    <h1>Combine Rules</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Combine Rules</button>
+    </form>
+    
+    {% comment %} <a href="{% url 'home' %}">Back to Home</a> {% endcomment %}
+</body>
+</html>

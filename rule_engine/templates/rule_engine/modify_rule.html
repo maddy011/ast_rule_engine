@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modify Rule</title>
+</head>
+<body>
+    <h1>Modify Rule</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Modify Rule</button>
+    </form>
+    
+    {% comment %} <a href="{% url 'home' %}">Back to Home</a> {% endcomment %}
+</body>
+</html>
